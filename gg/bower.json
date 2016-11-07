@@ -1,0 +1,18 @@
+{
+  "name": "sympathi",
+  "description": "",
+  "main": "./src/main.js",
+  "authors": [
+    "Daniel Asmadeus"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,41 @@
+html
+  head
+    meta(charset="utf-8")
+    link(rel="stylesheet" href="../css/default.css")
+    link(rel="stylesheet" href="../css/materialize.min.css")
+    link(rel="stylesheet" href="../css/animate.css")
+    script window.$ = window.jQuery = require('../lib/jquery.js')
+    script window.Hammer = require('../lib/hammer.js')
+    script(src="../lib/materialize.min.js")
+    // script(src="../lib/register.lib.js")
+    
+  body
+    div(class="headeron")
+      div(class="logo")
+        p Sympathi
+      
+    div(class="container content contentRegis")
+      div(class="row")
+        form(class="col s12")
+          div(class="row")
+            div(class="input-field col s12")
+              input(id="username" type="text" name="username" class="validate")
+              label(for="username") Nombre de usuario
+            div(class="row")
+              div(class="input-field col s12")
+                input(id="email" type="text" name="email" class="validate")
+                label(for="email") Correo electronico
+            div(class="row")
+              div(class="input-field col s12")
+                input(id="password" type="password" name="password" class="validate")
+                label(for="password") Contraseña
+            div(class="row")
+              div(class="input-field col s12 submit")
+                button(type="button" class="btn waves-effect waves-light" name="action" id="register") Registrarme
+    div(class="footerRegis")
+      div(class="login")
+        p 
+          a(href="index.pug") Ya tengo una cuenta
+          
+    script require('../../render.js')
+              

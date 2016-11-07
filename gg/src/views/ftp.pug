@@ -1,0 +1,35 @@
+html
+  head
+    meta(charset="utf-8")
+    link(rel="stylesheet" href="../css/default.css")
+    link(rel="stylesheet" href="../css/materialize.css")
+    link(rel="stylesheet" href="../css/animate.css")
+    script window.$ = window.jQuery = require('../lib/jquery.js')
+    script window.Hammer = require('../lib/hammer.js')
+    script(src="../lib/materialize.min.js")
+    
+  body
+    div(class="headeron")
+      div(class="logo")
+        p(clas="z-depth-3") Sympathi
+        
+    div(class="container content")
+      div(class="row")
+        form(class="col s12")
+          div(class="row")
+            div(class="input-field col s12")
+              input(id="email" name="email" type="text" class="validate")
+              label(for="email") Correo electronico
+          div(class="row")
+            div(class="input-field col s12 submit")
+              button(type="submit" class="btn waves-effect waves-dark" name="action") Enviar
+    
+    div(class="footerFTP")
+      div(class="login")
+        p 
+          a(href="index.pug") Entrar
+        
+      div(class="register")
+        p
+          a(href="regis.pug") Registrarme
+          

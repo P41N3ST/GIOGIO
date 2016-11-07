@@ -1,0 +1,40 @@
+html
+  head
+    title SympathiLol
+    meta(charset="utf-8")
+    link(rel="stylesheet" href="../css/default.css")
+    link(rel="stylesheet" href="../css/materialize.min.css")
+    link(rel="stylesheet" href="../css/animate.css")
+    script window.$ = window.jQuery = require('../lib/jquery.js')
+    script window.Hammer = require('../lib/hammer.js')
+    script(src="../lib/materialize.min.js")
+
+  body
+    div(class="headeron")
+      div(class="logo")
+        p(clas="z-depth-3") Sympathi
+
+    div(class="container content")
+      div(class="row")
+        form(class="col s12" action="")
+          div(class="row")
+            div(class="input-field col s12" )
+              input(id="username" name="email" type="text" class="validate")
+              label(for="username") Correo electronico
+          div(class="row")
+            div(class="input-field col s12")
+              input(id="password" name="password" type="password" class="validate")
+              label(for="password") Constraseña
+          div(class="row")
+            div(class="input-field col s12 submit")
+              button(type="submit" class="btn waves-effect waves-dark" name="action") Entrar
+
+    div(class="footer")
+      div(class="forgot")
+        p Olvide mi  
+          a(href="ftp.pug") contraseña
+      div(class="register")
+        p
+          a(href="http://Sympathi.com/register/") Registrate
+
+    script require('../../render.js')
